@@ -4,7 +4,7 @@ This project provides simple syntax highlighting for the [MFront](http://tfel.so
 
 ## Installation
 
-On the sublime menu open `Preferences > Browse Packages`. Next, open the `User` folder and place the provided `mfront.sublime-syntax` file there. The syntax highlighting should occur automatically, although you might need to reopen your MFront files to see the highlight.
+On the Sublime Text menu open `Preferences > Browse Packages`. Next, open the `User` folder and place the provided `mfront.sublime-syntax` file there. The syntax highlighting should occur automatically, although you might need to reopen your MFront files to see the highlight.
 
 ## Troubleshooting
 
