@@ -26,19 +26,23 @@ contexts:
     # need to be escaped: this is done by using two single quotes next to each
     # other.
     - match: '\b(if|else|for|while)\b'
-      scope: keyword.control.c++
+      scope: support.function
 
+    - match: '\b(i|j|k)\b'
+      scope: 
+    - match: '\b(CONSISTENTTANGENTOPERATOR|ELASTIC|SECANTOPERATOR)\b'
+      scope: storage.type.function
     # Numbers
-    - match: '\b(-)?[0-9.]+\b'
+    - match: '\b(-)?[0-9.e]+\b'
       scope: constant.numeric.c++
 
     - match: '^@[a-zA-Z]*\b'
       scope: entity.name.class.c++
 
-    - match: '(=|+|-|\*|/|!=)'
+    - match: '(=|\+|-|\*|/|!=|>|<)'
       scope: keyword.operator.assignment.c++
 
-    - match: '\b(stress|real|auto|const)\b'
+    - match: '\b(stress|strain|Stensor|StrainStensor|Stensor4|real|auto|const|unsigned|short)\b'
       scope: storage.modifier.c++
 
     - match: '::|\.'
@@ -88,4 +92,3 @@ contexts:
     - meta_scope: comment.line.example-c
     - match: $
       pop: true
-
